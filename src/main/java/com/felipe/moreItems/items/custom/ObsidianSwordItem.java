@@ -19,7 +19,7 @@ public class ObsidianSwordItem extends Item {
         super.postHit(stack, target, attacker);
 
         // Apply "bleeding" effect.
-        target.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, 80, 1, false, true, true));
+        target.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, 80, 3, false, true, true));
         MoreItems.LOGGER.info("OBSIDIAN SWORD HIT - DEBUG");
     }
 }
