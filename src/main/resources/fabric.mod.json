@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "more-items",
+  "version": "${version}",
+  "name": "more-items",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/more-items/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.felipe.moreItems.client.MoreItemsClient"
+    ],
+    "main": [
+      "com.felipe.moreItems.MoreItems"
+    ]
+  },
+  "mixins": [
+    "more-items.mixins.json",
+    {
+      "config": "more-items.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
